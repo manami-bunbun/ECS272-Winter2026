@@ -5,17 +5,27 @@ import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 import { grey } from '@mui/material/colors';
 
 // Adjust the color theme for material ui
 const theme = createTheme({
   palette: {
+    mode: 'dark',
     primary:{
-      main: grey[700],
+      main: '#1DB954',   // Spotify green
     },
     secondary:{
-      main: grey[700],
-    }
+      main: '#1ED760',
+    },
+    background: {
+      default: '#0B0B0F', 
+      paper: '#121218', 
+    },
+    text: {
+      primary: '#EDEDED',
+      secondary: '#A7A7A7',
+    },
   },
 })
 
@@ -50,6 +60,7 @@ function Layout() {
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <CssBaseline />
       <Layout />
     </ThemeProvider>
   )
