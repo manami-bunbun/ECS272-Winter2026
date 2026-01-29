@@ -85,6 +85,7 @@ export default function Scatter() {
       .call((gg) => gg.selectAll('path,line').attr('stroke', '#2A2A2A'))
 
     // plot
+    // TODO: add color like heatmap when time remains
     const pointR = 2
 
     g.append('g')
