@@ -1,6 +1,8 @@
 import Example from './components/Example'
 import Notes from './components/Notes'
 import Panel from './components/Panel'
+import StarPlot from './components/StarPlot'
+import Scatter from './components/Scatter'
 import { NotesWithReducer, CountProvider } from './components/NotesWithReducer';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
@@ -8,6 +10,8 @@ import Box from '@mui/material/Box';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { grey } from '@mui/material/colors';
+import Streamgraph from './components/Streamgraph'
+
 
 // Adjust the color theme for material ui
 const theme = createTheme({
@@ -37,25 +41,25 @@ function Layout() {
     <Box id='main-container'>
       <Stack spacing={1} sx={{ height: '100%' }}>
         {/* Top row: Example component taking about 60% width */}
-        <Grid container spacing={3} sx={{ height: '60%' }}>
+        <Grid container spacing={3} sx={{ height: '55%' }}>
           <Grid size={12}>
             <Panel title="View 1: Streamgraph">
-              <Example />
+              <Streamgraph />
             </Panel>
           </Grid>
           {/* flexible spacer to take remaining space */}
           {/* <Grid size="grow" /> */}
         </Grid>
         {/* Bottom row: Notes component taking full width */}
-        <Grid container spacing={1} sx={{ height: '40%' }}>
+        <Grid container spacing={1} sx={{ height: '45%' }}>
           <Grid size={5}>
             <Panel title="View 2: Star Plot">
-              <Example />
+              <StarPlot />
             </Panel>
           </Grid>
           <Grid size={7}>
             <Panel title="View 3: Scatter">
-              <Example />
+              <Scatter />
             </Panel>
           </Grid>
           {/* <Notes msg={"This is a message sent from App.tsx as component prop"} />
