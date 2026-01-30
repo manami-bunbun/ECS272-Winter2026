@@ -38,7 +38,7 @@ This dashboard is designed for independent music artists who want to understand 
 2. Bottom-left (View 2): Star Plot (Radar) comparison between datasets (past vs 2025 snapshot)
    - Gray = track_data_final.csv baseline (fixed at 0.5 for readability)
    - Green vertex labels show 2025 raw means; each axis also shows +/- delta% vs baseline
-   - Note: this view uses a normalized delta visualization (baseline=0.5, delta scaled,and amplified), and is intended to highlight small differences
+   - Note: this view uses a normalized delta visualization (baseline=0.5, delta scaled, amplified) to make small differences visible
 
 3. Bottom-right (View 3): Scatter plot (artist_popularity vs track_popularity)
    - Points are colored by artist_followers
@@ -53,4 +53,3 @@ The numerical difference was too small as the shown graph below, so I decided to
 2. Design palette
    use [d3.interpolateYlGn(t)](https://d3js.org/d3-scale-chromatic/sequential#interpolateYlGn) to represent spotify theme
    
-

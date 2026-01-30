@@ -19,7 +19,7 @@ export default function Panel({ title, children }: PanelProps) {
       }}
     >
       {title ? (
-        <Typography variant="subtitle2" sx={{ color: 'text.secondary', mb: 1 }}>
+        <Typography variant="subtitle2" sx={{ color: '#FFFFFF', mb: 1, fontWeight: 800 }}>
           {title}
         </Typography>
       ) : null}

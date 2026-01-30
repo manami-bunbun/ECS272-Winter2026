@@ -13,7 +13,6 @@ import { grey } from '@mui/material/colors';
 import Streamgraph from './components/Streamgraph'
 
 
-// Adjust the color theme for material ui
 const theme = createTheme({
   palette: {
     mode: 'dark',
@@ -43,7 +42,7 @@ function Layout() {
         {/* Top row: Example component taking about 60% width */}
         <Grid container spacing={3} sx={{ height: '55%' }}>
           <Grid size={12}>
-            <Panel title="View 1: Streamgraph">
+            <Panel title="Hit Trend By Release Year">
               <Streamgraph />
             </Panel>
           </Grid>
@@ -53,12 +52,12 @@ function Layout() {
         {/* Bottom row: Notes component taking full width */}
         <Grid container spacing={1} sx={{ height: '45%' }}>
           <Grid size={5}>
-            <Panel title="View 2: Star Plot">
+            <Panel title="Trend Comparison : Past vs 2025">
               <StarPlot />
             </Panel>
           </Grid>
           <Grid size={7}>
-            <Panel title="View 3: Scatter">
+            <Panel title="Relationship Track Popularity vs Artist Popularity">
               <Scatter />
             </Panel>
           </Grid>
