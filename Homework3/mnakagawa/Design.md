@@ -4,7 +4,7 @@ Help emerging music artists understand how tracks from a similar era to their ow
 
 ## Through-Line (Core Message / Meta Concept)
 
-Narrowing the time window reveals how track traits connect to performance, and how artist popularity amplifies success.
+Narrowing the time window reveals how track traits connect to popurality, and how artist themselves popularity amplifies success.
 
 ## Story Sequence
 
