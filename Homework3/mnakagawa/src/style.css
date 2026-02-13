@@ -1,0 +1,69 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+#main-container{
+  height: 100vh;
+  width: 100vw;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+.chart-container{
+  height: 100%;
+}
+
+.chart-tooltip-root{
+  position: relative;
+}
+
+
+.chart-tooltip{
+  position: absolute;
+  width: 240px;
+  pointer-events: none;
+  background: rgba(18, 18, 24, 0.92);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 10px 12px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.55);
+  backdrop-filter: blur(6px);
+
+}
+
+.chart-tooltip-title{
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 1.2;
+  margin-bottom: 2px;
+}
+
+.chart-tooltip-sub{
+  color: #A7A7A7;
+  font-weight: 800;
+  font-size: 11px;
+  margin-bottom: 8px;
+}
+
+.chart-tooltip-row{
+  color: #A7A7A7;
+  font-size: 11px;
+  margin: 2px 0;
+}
+
+.chart-tooltip-row span{
+  color: #EDEDED;
+  font-weight: 800;
+}
